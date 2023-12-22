@@ -11,8 +11,8 @@
 
 def hello_user():
   answer = input('Как дела?\n')
-  return answer
+  while not answer == 'Хорошо':
+    answer = input('Как дела?\n') 
     
 if __name__ == "__main__":
-    while not hello_user() == 'Хорошо':
-      hello_user()
+  hello_user()
