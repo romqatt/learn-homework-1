@@ -42,4 +42,4 @@ if __name__ == "__main__":
       average_solds += phone['average_item_sold']
 
     print(f'Суммарное количество продаж всех товаров {total_solds}')
-    print(f'Среднее количество продаж всех товаров {average_solds}')
+    print(f'Среднее количество продаж всех товаров {round(average_solds / len(phones))}')
